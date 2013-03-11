@@ -52,7 +52,6 @@ function _handleUpdate(key, val) {
 }
 
 function _remoteChange(evt) {
-  console.log('hotdog')
   if (! _ownMsg(evt.newValue)) 
     _handleUpdate(evt.key, _msgVal(evt.newValue));
 }
